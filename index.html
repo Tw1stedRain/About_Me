@@ -16,6 +16,7 @@
         <li>Does Nicole like anime? : Yes</li>
         <li>Does Nicole like country music? : No</li>
         <li>Is Nicole single? : Yes</li>
+        <li></li>
     </ol>
 
     <script>
@@ -26,54 +27,60 @@
 
     //coding question
     var coding = prompt ('Does Nicole like coding?');
+    coding = coding.toLocaleLowerCase();
 
-    if (coding === 'yes' || coding === 'y' || coding === 'YES' || coding === 'Y'){
+    if (coding === 'yes' || coding === 'y'){
         alert ('Great job, ' + userName + ' of course I love coding!');
-    } else if(coding === 'no' || coding === 'n' || coding === 'NO' || coding === 'N'){
+    } else if(coding === 'no' || coding === 'n'){
         alert( 'Oh No! Of course I love coding!');
     } else {
-        alert('Come on, yes or no!');
+        alert('Please respond using yes or no or y or n.');
     }
     console.log('Does Nicole like coding? : ' + coding);
     
     // anime question
     var anime = prompt ('Does Nicole like anime?');
+    anime = anime.toLocaleLowerCase();
 
-    if (anime === 'yes' || anime === 'y' || anime === 'YES' || anime === 'Y'){
+    if (anime === 'yes' || anime === 'y'){
         alert ('Great job, ' + userName + ' anime is great right?!');
-    } else if(anime === 'no' || anime === 'n' || anime === 'NO' || anime === 'N'){
+    } else if(anime === 'no' || anime === 'n'){
         alert( 'Oh No! Of course I love anime!');
     } else {
-        alert('Come on, yes or no!');
+        alert('Please respond using yes or no or y or n.');
     }
 
     console.log('Does Nicole like anime? : ' + anime);
 
     //country music
     var countryMusic = prompt ('Does Nicole like country music?');
-
-     if (countryMusic === 'no' || countryMusic === 'n' || countryMusic === 'NO' || countryMusic === 'N'){
+    countryMusic = countryMusic.toLocaleLowerCase();
+    
+     if (countryMusic === 'no' || countryMusic === 'n'){
         alert ('Great job, ' + userName + ' I really don\' t like country music');
-    } else if(countryMusic === 'yes' || countryMusic === 'y' || countryMusic === 'YES' || countryMusic === 'Y'){
+    } else if(countryMusic === 'yes' || countryMusic === 'y'){
         alert( 'Oh No! I\'m really not a fan of country music.');
     } else {
-        alert('Come on, yes or no!');
+        alert('Please respond using yes or no or y or n.');
     }
 
     console.log('Does Nicole like country music? ' + countryMusic);
 
     //single question
     var single = prompt ('Is Nicole single?');
+    single = single.toLocaleLowerCase();
 
-     if (single === 'no' || single === 'n' || single === 'NO' || single === 'N'){
+     if (single === 'no' || single === 'n'){
         alert ('That\'s right, ' + userName + 'I am single.');
-    } else if(single === 'yes' || single === 'y' || single === 'YES' || single === 'Y'){
+    } else if(single === 'yes' || single === 'y'){
         alert( 'Oh No! I\'m actually single.');
     } else {
-        alert('Come on, yes or no!');
+        alert('Please respond using yes or no or y or n.');
     }
 
     console.log('Is Nicole single? ' + single);
+
+    //
     
     </script>
 
