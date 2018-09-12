@@ -1,0 +1,8 @@
+.yes{
+    color: rgb(16, 206, 16);
+    border: double;
+}
+.no{
+    color: rgb(223, 39, 39);
+    border: dotted;
+}
