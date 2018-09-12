@@ -14,9 +14,12 @@
     <ol>
         <li>Does Nicole like coding? : Yes</li>
         <li>Does Nicole like anime? : Yes</li>
+        <li>Does Nicole like country music? : No</li>
+        <li>Is Nicole single? : Yes</li>
     </ol>
 
     <script>
+        'use strict';
     //to gain userName
     var userName = prompt ('Welcome to my site, what\'s your name?'); 
     console.log('What is your name? : ' + userName);
@@ -24,9 +27,9 @@
     //coding question
     var coding = prompt ('Does Nicole like coding?');
 
-    if (coding === 'yes' || coding === 'yeah'){
+    if (coding === 'yes' || coding === 'y' || coding === 'YES' || coding === 'Y'){
         alert ('Great job, ' + userName + ' of course I love coding!');
-    } else if(coding === 'no'){
+    } else if(coding === 'no' || coding === 'n' || coding === 'NO' || coding === 'N'){
         alert( 'Oh No! Of course I love coding!');
     } else {
         alert('Come on, yes or no!');
@@ -36,9 +39,9 @@
     // anime question
     var anime = prompt ('Does Nicole like anime?');
 
-    if (coding === 'yes' || coding === 'yeah'){
+    if (anime === 'yes' || anime === 'y' || anime === 'YES' || anime === 'Y'){
         alert ('Great job, ' + userName + ' anime is great right?!');
-    } else if(coding === 'no'){
+    } else if(anime === 'no' || anime === 'n' || anime === 'NO' || anime === 'N'){
         alert( 'Oh No! Of course I love anime!');
     } else {
         alert('Come on, yes or no!');
@@ -46,6 +49,21 @@
 
     console.log('Does Nicole like anime? : ' + anime);
 
+    //country music
+    var countryMusic = prompt ('Does Nicole like country music?');
+
+     if (countryMusic === 'no' || countryMusic === 'n' || countryMusic === 'NO' || countryMusic === 'N'){
+        alert ('Great job, ' + userName + ' I really don\' t like country music');
+    } else if(countryMusic === 'yes' || countryMusic === 'y' || countryMusic === 'YES' || countryMusic === 'Y'){
+        alert( 'Oh No! I\'m really not a fan of country music.');
+    } else {
+        alert('Come on, yes or no!');
+    }
+
+    console.log('Does Nicole like country music? ' + countryMusic);
+
+    //single question
+    
     
     </script>
 
