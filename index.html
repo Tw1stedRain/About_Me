@@ -13,11 +13,15 @@
 
     <ol>
         <li>Does Nicole like coding? : Yes</li>
+        <li>Does Nicole like anime? : Yes</li>
     </ol>
 
     <script>
+    //to gain userName
     var userName = prompt ('Welcome to my site, what\'s your name?'); 
+    console.log('What is your name? : ' + userName);
 
+    //coding question
     var coding = prompt ('Does Nicole like coding?');
 
     if (coding === 'yes' || coding === 'yeah'){
@@ -27,7 +31,20 @@
     } else {
         alert('Come on, yes or no!');
     }
+    console.log('Does Nicole like coding? : ' + coding);
     
+    // anime question
+    var anime = prompt ('Does Nicole like anime?');
+
+    if (coding === 'yes' || coding === 'yeah'){
+        alert ('Great job, ' + userName + ' anime is great right?!');
+    } else if(coding === 'no'){
+        alert( 'Oh No! Of course I love anime!');
+    } else {
+        alert('Come on, yes or no!');
+    }
+
+    console.log('Does Nicole like anime? : ' + anime);
 
     
     </script>
