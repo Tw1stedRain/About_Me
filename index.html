@@ -16,7 +16,7 @@
         <li>Does Nicole like anime? : Yes</li>
         <li>Does Nicole like country music? : No</li>
         <li>Is Nicole single? : Yes</li>
-        <li></li>
+        <li>Does Nicole like turtles? : Yes</li>
     </ol>
 
     <script>
@@ -71,7 +71,7 @@
     single = single.toLocaleLowerCase();
 
      if (single === 'no' || single === 'n'){
-        alert ('That\'s right, ' + userName + 'I am single.');
+        alert ('That\'s right, ' + userName + ' I am single.');
     } else if(single === 'yes' || single === 'y'){
         alert( 'Oh No! I\'m actually single.');
     } else {
@@ -80,7 +80,19 @@
 
     console.log('Is Nicole single? ' + single);
 
-    //
+    //turtles!
+    var turtle = prompt ('Does Nicole like turtles?');
+    single = turtle.toLocaleLowerCase();
+
+     if (turtle === 'yes' || turtle === 'y'){
+        alert ('That\'s right, ' + userName + ' I LOVE turtles!');
+    } else if(turtle === 'no' || turtle === 'n'){
+        alert( 'Oh No! I LOVE turtles!');
+    } else {
+        alert('Please respond using yes or no or y or n.');
+    }
+
+    console.log('Does Nicole like turtles? ' + turtle);
     
     </script>
 
