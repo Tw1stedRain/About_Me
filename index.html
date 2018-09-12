@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Nicole</title>
 
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
     <h1>About Nicole</h1>
@@ -63,7 +63,17 @@
     console.log('Does Nicole like country music? ' + countryMusic);
 
     //single question
-    
+    var single = prompt ('Is Nicole single?');
+
+     if (single === 'no' || single === 'n' || single === 'NO' || single === 'N'){
+        alert ('That\'s right, ' + userName + 'I am single.');
+    } else if(single === 'yes' || single === 'y' || single === 'YES' || single === 'Y'){
+        alert( 'Oh No! I\'m actually single.');
+    } else {
+        alert('Come on, yes or no!');
+    }
+
+    console.log('Is Nicole single? ' + single);
     
     </script>
 
