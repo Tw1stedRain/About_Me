@@ -1,3 +1,6 @@
+.yes_no{
+    text-align: center;
+}
 .yes{
     color: rgb(16, 206, 16);
     border: double;
