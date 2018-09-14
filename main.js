@@ -1,6 +1,6 @@
 'use strict';
 //to gain userName
-var userName = prompt ('Welcome to my site, what\'s your name?'); 
+var userName = prompt ('Welcome to my site, what\'s your name?');
 console.log('What is your name? : ' + userName);
 
 //coding question
@@ -79,7 +79,6 @@ var attempts = 4;
 
 while (attempts > 0 ){
   var steps = prompt('At least how many steps did I take today?');
-  console.log('STEPS', typeof steps, steps);
   if (steps >= 10000){
     attempts = 0;
     console.log('SUCCESS<<<<', steps, attempts);
@@ -101,19 +100,22 @@ while (attempts > 0 ){
 console.log('How many steps did I take today? : ' + steps);
 
 //multiple choice question
-var hairColors = ['blonde', 'black', 'blue', 'ginger', 'red', 'purple', 'green', 'silver'];
+var hairColors = ['blonde', 'black', 'blue', 'ginger', 'red', 'purple', 'green', 'silver', 'brown'];
 
 var tries = 6;
 
 while (tries > 0 ){
-  var hair = prompt('What are all the different colors that I\'ve died my hair?');
+  var hair = prompt('What is one of the different colors that I\'ve dyed my hair?');
   hair = hair.toLowerCase();
   if (hairColors.includes(hair)){
     tries = 0;
+    console.log('SUCCESS<<<<', hair, tries);
     alert ('Corect response! Good job!');
     break;
   } else{
     alert ('Nope, maybe I should try that next. Try again.');
+    console.log('fail<<<<', hair, tries);
   }
   tries--;
 }
+console.log('What is one of the colors I\'ve dyed my hair? : ' + hair);
