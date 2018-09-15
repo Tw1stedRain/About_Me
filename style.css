@@ -1,3 +1,10 @@
+h1{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
 .yes_no{
     text-align: center;
 }
@@ -8,4 +15,9 @@
 .no{
     color: rgb(223, 39, 39);
     border: dotted;
+}
+.color{
+    color: deepskyblue;
+    list-style-type: square;
+    text-align: left;
 }
