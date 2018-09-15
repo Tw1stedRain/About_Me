@@ -1,14 +1,7 @@
 'use strict';
 
-//global variables
-var userName;
-
-//to gain userName
-var useername = function(){
-
-  var userName = prompt ('Welcome to my site, what\'s your name?');
-  console.log('What is your name? : ' + userName);
-};
+var userName = prompt ('Welcome to my site, what\'s your name?');
+console.log('What is your name? : ' + userName);
 
 //coding question
 
@@ -156,8 +149,6 @@ var hairQuestion = function(){
 };
 
 // calling the functions
-
-useername();
 codingQuestion();
 animeQuestion();
 countryMusicQuestion();
