@@ -11,12 +11,12 @@ var correctGuesses = 0;
 var codingQuestion = function () {
 
   var coding = prompt('Does Nicole like coding?');
-  coding = coding.toLowerCase();
+  coding = coding.toLowerCase().charAt(0);
 
-  if (coding === 'yes' || coding === 'y') {
+  if (coding === 'y') {
     alert('Great job, ' + userName + ' of course I love coding!');
     correctGuesses++;
-  } else if (coding === 'no' || coding === 'n') {
+  } else if (coding === 'n') {
     alert('Oh No! Of course I love coding!');
   } else {
     alert('Please respond using yes or no or y or n.');
@@ -29,12 +29,12 @@ var codingQuestion = function () {
 var animeQuestion = function () {
 
   var anime = prompt('Does Nicole like anime?');
-  anime = anime.toLowerCase();
+  anime = anime.toLowerCase().charAt(0);
 
-  if (anime === 'yes' || anime === 'y') {
+  if (anime === 'y') {
     alert('Great job, ' + userName + ' anime is great right?!');
     correctGuesses++;
-  } else if (anime === 'no' || anime === 'n') {
+  } else if (anime === 'n') {
     alert('Oh No! Of course I love anime!');
   } else {
     alert('Please respond using yes or no or y or n.');
@@ -48,12 +48,12 @@ var animeQuestion = function () {
 var countryMusicQuestion = function () {
 
   var countryMusic = prompt('Does Nicole like country music?');
-  countryMusic = countryMusic.toLowerCase();
+  countryMusic = countryMusic.toLowerCase().charAt(0);
 
-  if (countryMusic === 'no' || countryMusic === 'n') {
+  if (countryMusic === 'n') {
     alert('Great job, ' + userName + ' I really don\'t like country music');
     correctGuesses++;
-  } else if (countryMusic === 'yes' || countryMusic === 'y') {
+  } else if (countryMusic === 'y') {
     alert('Oh No! I\'m really not a fan of country music.');
   } else {
     alert('Please respond using yes or no or y or n.');
@@ -67,12 +67,12 @@ var countryMusicQuestion = function () {
 var singleQuestion = function () {
 
   var single = prompt('Is Nicole single?');
-  single = single.toLowerCase();
+  single = single.toLowerCase().charAt(0);
 
-  if (single === 'yes' || single === 'y') {
+  if (single === 'y') {
     alert('That\'s right, ' + userName + ' I am single.');
     correctGuesses++;
-  } else if (single === 'no' || single === 'n') {
+  } else if (single === 'n') {
     alert('Oh No! I\'m actually single.');
   } else {
     alert('Please respond using yes or no or y or n.');
@@ -86,12 +86,12 @@ var singleQuestion = function () {
 var turtleQuestion = function () {
 
   var turtle = prompt('Does Nicole like turtles?');
-  turtle = turtle.toLowerCase();
+  turtle = turtle.toLowerCase().charAt(0);
 
-  if (turtle === 'yes' || turtle === 'y') {
+  if (turtle === 'y') {
     alert('That\'s right, ' + userName + ' I LOVE turtles!');
     correctGuesses++;
-  } else if (turtle === 'no' || turtle === 'n') {
+  } else if (turtle === 'n') {
     alert('Oh No! I LOVE turtles!');
   } else {
     alert('Please respond using yes or no or y or n.');
